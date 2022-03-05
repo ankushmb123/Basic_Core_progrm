@@ -10,11 +10,10 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            Check_Even_odd even_odd = new Check_Even_odd();
-            Console.WriteLine("Enter number");
-            int number = Convert.ToInt32(Console.ReadLine());
-            even_odd.Evenodd(number);
-            
+            Check_Vowel_consonant vowelconsonant = new Check_Vowel_consonant();
+            Console.WriteLine("Enter charactor");
+            char alphabet = Convert.ToChar(Console.ReadLine());
+            vowelconsonant.vowel_consonant(alphabet);
         }
     }
 }
