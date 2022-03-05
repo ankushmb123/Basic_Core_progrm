@@ -10,10 +10,12 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            Prime_factor prime = new Prime_factor();
-            int num = Convert.ToInt32(Console.ReadLine());
-            prime.Factorization(num);
-
+            Swap_two_num Swap = new Swap_two_num();
+            Console.WriteLine("Enter first number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Swap.Swaping(num1, num2);
         }
     }
 }
