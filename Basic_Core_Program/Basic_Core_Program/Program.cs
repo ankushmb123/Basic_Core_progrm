@@ -10,8 +10,9 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            Power_two Power = new Power_two();
-            Power.Powertwo();
+            Prime_factor prime = new Prime_factor();
+            int num = Convert.ToInt32(Console.ReadLine());
+            prime.Factorization(num);
 
         }
     }
