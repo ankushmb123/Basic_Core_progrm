@@ -10,10 +10,15 @@ namespace Basic_Core_Program
     {
         static void Main(string[] args)
         {
-            Check_Vowel_consonant vowelconsonant = new Check_Vowel_consonant();
-            Console.WriteLine("Enter charactor");
-            char alphabet = Convert.ToChar(Console.ReadLine());
-            vowelconsonant.vowel_consonant(alphabet);
+            Largest_among_num large = new Largest_among_num();
+            Console.WriteLine("Enter first number");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter second number");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter third number");
+            int number3 = Convert.ToInt32(Console.ReadLine());
+            large.largest_num(number1, number2, number3);
+            
         }
     }
 }
