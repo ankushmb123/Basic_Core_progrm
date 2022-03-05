@@ -6,36 +6,18 @@ using System.Threading.Tasks;
 
 namespace Basic_Core_Program
 {
-    internal class Flip_Coin
+    internal class Harmonic
     {
-        public int head = 0;
-        public int tail = 0;
-        public int percentagehead = 0;
-        public int percentagetail = 0;
-        public void Checkpercentage()
+        public void Harmonic_number()
         {
-            Console.WriteLine("Enter number of times you want to flip coin");
-            int flip_number = Convert.ToInt32(Console.ReadLine());
-            Random random = new Random();
-
-            for (int i = 0; i < flip_number; i++)
+            Console.WriteLine("Enter the value of n");
+            int N = Convert.ToInt32(Console.ReadLine());
+            double harmonic = 1.00;
+            for (int i = 2; i <= N; i++)
             {
-                double checkflip = random.Next(0, 2);
-                if (checkflip < 0.5)
-                {
-                    Console.WriteLine("Tail");
-                    tail++;
-                }
-                else
-                {
-                    Console.WriteLine("Head");
-                    head++;
-                }
+                harmonic += (double)1 / i;
             }
-            percentagehead = head * (100 / flip_number);
-            percentagetail = tail * (100 / flip_number);
-            Console.WriteLine("Percentage of head :" + percentagehead + " Percentage of tail:" + percentagehead);
-            Console.ReadKey();
+            Console.WriteLine("Sum of Harmonic number is :" + harmonic);
         }
     }
 }
